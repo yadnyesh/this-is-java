@@ -9,6 +9,5 @@ public class Hello {
         log.info("Finally Worked");
         float marks = 6.5f;
         log.info(String.valueOf(marks));
-
     }
 }
