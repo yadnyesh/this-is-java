@@ -5,13 +5,32 @@ public class ByteHello {
         int x = 6;
         int result = 0;
 
-//        if(x%2 ==0)
-//            result = 10;
-//        else
-//            result = 20;
+        switch (x) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Enter a valid number");
 
-        result = x%2==0 ?10 : 20;
+        }
 
-        System.out.println(result);
     }
 }
