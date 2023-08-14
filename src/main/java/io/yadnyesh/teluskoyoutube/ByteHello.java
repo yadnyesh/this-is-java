@@ -7,6 +7,7 @@ public class ByteHello {
 
             Calculator calculator = new Calculator();
             System.out.println(calculator.add(num1, num2));
+            System.out.println(calculator.add(num1, num2, 6));
         }
 }
 
@@ -16,6 +17,10 @@ class Calculator {
 
     public int add(int num1, int num2) {
         return num1 + num2;
+    }
+
+    public int add(int num1, int num2, int num3) {
+        return num1 + num2 + num3;
     }
 
 
