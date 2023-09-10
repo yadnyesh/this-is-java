@@ -2,15 +2,26 @@ package io.yadnyesh.teluskoyoutube;
 
 public class Demo {
     public static void main(String[] args) {
-        Human yadnyesh = new Human();
-        yadnyesh.setName("Yadnyesh Bharat Juvekar");
-        yadnyesh.setAge(42);
-        System.out.println(yadnyesh.getAge() + " " + yadnyesh.getName());
-        Human varada  = new Human(12, "Varada");
-        System.out.println(varada.getAge() + " " + varada.getName());
+        B b = new B();
 
     }
 }
+
+class A {
+    public A() {
+        System.out.println("Inside the constructor of A");
+    }
+}
+
+class B extends A {
+    public B(){
+        System.out.println("Inside the constructor of B");
+    }
+    public B(int b){
+        System.out.println("Inside the parameterised constructor of B");
+    }
+}
+
 
 class Human {
     private int age;
@@ -18,7 +29,7 @@ class Human {
 
     public Human() {
         this.age = 11;
-        this.name = "Yadnyesh"
+        this.name = "Yadnyesh";
         System.out.println("Inside the constructor");
     }
 
