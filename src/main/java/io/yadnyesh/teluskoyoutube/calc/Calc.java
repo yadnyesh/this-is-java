@@ -1,4 +1,4 @@
-package io.yadnyesh.teluskoyoutube;
+package io.yadnyesh.teluskoyoutube.calc;
 
 public class Calc {
     public int add (int n1, int n2) {

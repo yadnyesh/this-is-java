@@ -1,4 +1,4 @@
-package io.yadnyesh.teluskoyoutube;
+package io.yadnyesh.teluskoyoutube.calc;
 
 public class AdvCalc extends Calc{
 
