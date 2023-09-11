@@ -2,55 +2,16 @@ package io.yadnyesh.teluskoyoutube;
 
 public class Demo {
     public static void main(String[] args) {
-        B b = new B();
+        Calc calc = new Calc();
+        System.out.println("Sum of 10 + 12 is: " + calc.add(10, 12));
+        System.out.println("Difference of 12 and 19 is: " + calc.sub(12, 10));
+
+        ScientificCalc advCalc = new ScientificCalc();
+        System.out.println(advCalc.multi(2,2));
+        System.out.println(advCalc.add(2,5));
+        System.out.println(advCalc.power(3,3));
 
     }
 }
 
-class A {
-    public A() {
-        System.out.println("Inside the constructor of A");
-    }
-}
 
-class B extends A {
-    public B(){
-        System.out.println("Inside the constructor of B");
-    }
-    public B(int b){
-        System.out.println("Inside the parameterised constructor of B");
-    }
-}
-
-
-class Human {
-    private int age;
-    private String name;
-
-    public Human() {
-        this.age = 11;
-        this.name = "Yadnyesh";
-        System.out.println("Inside the constructor");
-    }
-
-    public Human(int age, String name) {
-        this.age = age;
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
