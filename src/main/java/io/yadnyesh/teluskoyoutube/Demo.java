@@ -2,6 +2,9 @@ package io.yadnyesh.teluskoyoutube;
 
 
 interface A{
+
+    int age = 42;
+    int area = 105;
     void show();
     void config();
 }
@@ -23,6 +26,7 @@ public class Demo {
         B b = new B();
         b.show();
         b.config();
+        System.out.println("age: " + b.age);
     }
 
 }
