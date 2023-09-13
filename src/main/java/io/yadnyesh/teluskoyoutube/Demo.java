@@ -1,25 +1,28 @@
 package io.yadnyesh.teluskoyoutube;
 
 
-class A {
-    public void show() {
-        System.out.println("In A show method");
-    }
+interface A{
+    void show();
+    void config();
 }
 
-class B extends A {
+class B implements A {
+
+    @Override
     public void show() {
-        System.out.println("In B show method");
+        System.out.println("In B Show");
+    }
+
+    @Override
+    public void config() {
+        System.out.println("In B Config");
     }
 }
 public class Demo {
     public static void main(String[] args) {
-        A a = new A(){
-            public void show() {
-                System.out.println("In Anonymous class");
-            }
-        };
-        a.show();
+        B b = new B();
+        b.show();
+        b.config();
     }
 
 }
