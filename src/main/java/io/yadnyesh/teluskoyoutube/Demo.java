@@ -1,5 +1,7 @@
 package io.yadnyesh.teluskoyoutube;
 
+import java.util.Arrays;
+
 enum Status {
     Running, Failed, Pending, Status;
 }
@@ -8,8 +10,9 @@ enum Status {
 
 public class Demo {
     public static void main(String[] args) {
-        Status s = Status.Running;
-        System.out.println(s);
+        Status s = Status.Pending;
+        System.out.println(s.ordinal());
+        System.out.println(Arrays.stream(Status.values()).toList());
     }
 
 }
