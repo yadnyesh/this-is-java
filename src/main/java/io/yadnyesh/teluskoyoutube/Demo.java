@@ -13,6 +13,9 @@ public class Demo {
         Status s = Status.Pending;
         System.out.println(s.ordinal());
         System.out.println(Arrays.stream(Status.values()).toList());
+        System.out.println(s.getClass().getClassLoader());
+        System.out.println(s.getClass().getSuperclass());
+        System.out.println(s.getClass().getCanonicalName());
     }
 
 }
