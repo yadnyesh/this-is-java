@@ -40,12 +40,7 @@ class B implements A {
 }
 public class Demo {
     public static void main(String[] args) {
-        A obj = new A() {
-            @Override
-            public void show() {
-                System.out.println("In A's new implementation");
-            }
-        };
+        A obj = () -> System.out.println("In A's new implementation");
         obj.show();
     }
 
