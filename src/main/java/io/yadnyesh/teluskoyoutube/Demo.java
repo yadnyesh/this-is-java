@@ -26,13 +26,27 @@ enum Laptop {
 
 //1806542523 - Driving License Renewal Application Number
 
+@FunctionalInterface
+interface A {
+    public abstract void show();
+}
+
+class B implements A {
+
+    @Override
+    public void show() {
+        System.out.println("In B Show");
+    }
+}
 public class Demo {
     public static void main(String[] args) {
-        Laptop laptop = Laptop.Macbook;
-        System.out.println(laptop + " : " + laptop.getPrice());
-        for (Laptop looplap : Laptop.values()) {
-            System.out.println(looplap + " : " + looplap.getPrice());
-        }
+        A obj = new A() {
+            @Override
+            public void show() {
+                System.out.println("In A's new implementation");
+            }
+        };
+        obj.show();
     }
 
 }
