@@ -1,5 +1,7 @@
 package io.yadnyesh.teluskoyoutube;
 
+import com.sun.source.tree.BreakTree;
+
 import java.util.Arrays;
 
 enum Laptop {
@@ -28,20 +30,13 @@ enum Laptop {
 
 @FunctionalInterface
 interface A {
-    public abstract void show();
-}
-
-class B implements A {
-
-    @Override
-    public void show() {
-        System.out.println("In B Show");
-    }
+    public abstract int add(int i, int j);
 }
 public class Demo {
     public static void main(String[] args) {
-        A obj = () -> System.out.println("In A's new implementation");
-        obj.show();
+        A obj = (i, j) -> i+j;
+
+        System.out.println("In A's new implementation: " + obj.add(2,2));
     }
 
 }
