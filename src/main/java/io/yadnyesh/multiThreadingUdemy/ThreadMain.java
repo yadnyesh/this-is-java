@@ -1,7 +1,6 @@
 package io.yadnyesh.multiThreadingUdemy;
 
 import java.math.BigInteger;
-import java.util.function.BiFunction;
 
 public class ThreadMain {
     public static void main(String[] args) {
