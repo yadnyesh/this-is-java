@@ -3,7 +3,7 @@ package io.yadnyesh.dsguyudemy;
 public class Fibonacci {
     public static void main(String[] args) {
         int n;
-        System.out.printf("Fibo is " + fibo(3));
+        System.out.printf("Fibo is " + fibo(10));
     }
 
     public static int fibo(int n) {
