@@ -8,12 +8,28 @@ public class DemoException {
         try {
             j = 18/i;
             if (j == 0) {
-                throw new ArithmeticException("This is an exception");
+                throw new MyException("This is my own exception");
             }
+        } catch (MyException me) {
+
+            System.out.println("My new Exception..." + me);
+
         } catch (ArithmeticException e) {
+
             System.out.println("Exception...." + e.getMessage());
-        } catch (Exception e) {
-            System.out.println("Something went wrong...." + e.getMessage());
+
         }
+        catch (Exception e) {
+
+            System.out.println("Something went wrong...." + e.getMessage());
+
+        }
+    }
+
+}
+
+class MyException extends Exception {
+    public MyException(String str) {
+        super(str);
     }
 }
