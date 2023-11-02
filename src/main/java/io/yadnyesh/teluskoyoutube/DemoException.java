@@ -7,16 +7,13 @@ public class DemoException {
 
         try {
             j = 18/i;
-            if (j == 0) {
-                throw new MyException("This is my own exception");
+            if( j == 0) {
+                throw new ArithmeticException("From my code");
             }
-        } catch (MyException me) {
-
-            System.out.println("My new Exception..." + me);
 
         } catch (ArithmeticException e) {
-
-            System.out.println("Exception...." + e.getMessage());
+            j = 18;
+            System.out.println("Exception.... with default output" + e.getMessage());
 
         }
         catch (Exception e) {
