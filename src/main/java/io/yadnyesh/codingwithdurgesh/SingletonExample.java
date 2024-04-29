@@ -11,8 +11,12 @@ public class SingletonExample {
     //Lazy way of creating singleton
     public synchronized static SingletonExample getSingletonExample() {
         // create object of this class
-        if (singletonExample == null) {
-            singletonExample = new SingletonExample();
+        if(singletonExample == null) {
+            synchronized (SingletonExample.class){
+                if (singletonExample == null) {
+                    singletonExample = new SingletonExample();
+                }
+            }
         }
 
         return singletonExample;
