@@ -8,7 +8,8 @@ public class SingletonExample {
 
     }
 
-    public static SingletonExample getSingletonExample() {
+    //Lazy way of creating singleton
+    public synchronized static SingletonExample getSingletonExample() {
         // create object of this class
         if (singletonExample == null) {
             singletonExample = new SingletonExample();
