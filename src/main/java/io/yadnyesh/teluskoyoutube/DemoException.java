@@ -1,5 +1,8 @@
 package io.yadnyesh.teluskoyoutube;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class DemoException {
     public static void main(String[] args) {
         int i = 20;
@@ -8,17 +11,17 @@ public class DemoException {
         try {
             j = 18/i;
             if( j == 0) {
-                throw new ArithmeticException("From my code");
+                throw new MyException("From my code");
             }
 
         } catch (ArithmeticException e) {
             j = 18;
-            System.out.println("Exception.... with default output" + e.getMessage());
+            log.error("Exception.... with default output  --> " + e.getMessage());
 
         }
         catch (Exception e) {
 
-            System.out.println("Something went wrong...." + e.getMessage());
+            log.error("Something went wrong...." + e.getMessage());
 
         }
     }
