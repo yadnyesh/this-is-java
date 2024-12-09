@@ -14,6 +14,6 @@ public class ComparableDemo {
         list.add(new Student("Akshat", 3.9));
 
         list.sort(null);
-        System.out.println(list);
+        System.out.println(list.toString());
     }
 }
