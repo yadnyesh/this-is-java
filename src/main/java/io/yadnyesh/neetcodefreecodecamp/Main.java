@@ -5,6 +5,5 @@ public class Main {
         Integer nums[] = new Integer[]{1, 2, 3, 9};
         CountDuplicate countDuplicate = new CountDuplicate();
         System.out.println(countDuplicate.containsDuplicate(nums));
-
     }
 }
