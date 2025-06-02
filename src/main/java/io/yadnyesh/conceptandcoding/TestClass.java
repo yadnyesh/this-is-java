@@ -1,5 +1,5 @@
 package io.yadnyesh.conceptandcoding;
 
-@MyCustomAnnotationWithInherited
+@MyCustomAnnotationWithInherited(name = "test")
 public class TestClass {
 }
