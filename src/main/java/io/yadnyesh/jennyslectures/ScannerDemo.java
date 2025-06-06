@@ -5,11 +5,13 @@ import java.util.Scanner;
 
 public class ScannerDemo {
     public static void main(String[] args) throws IOException {
-        System.out.println("Hello, World!");
+        System.out.println("Welcome to Youtube channel name generator!");
+        System.out.println("What is your nick name?");
         Scanner scanner = new Scanner(System.in);
-        String firstName = scanner.next();
-        System.out.println("The name you entered is: " + firstName);
-        String secondName = scanner.next();
-        System.out.println("The second name you entered is: " + secondName);
+        String name = scanner.nextLine();
+        System.out.println("What is the next word you want to add?");
+        String nextWord = scanner.nextLine();
+        System.out.println("Your channel name is: " + name + " " + nextWord);
+
     }
 }
