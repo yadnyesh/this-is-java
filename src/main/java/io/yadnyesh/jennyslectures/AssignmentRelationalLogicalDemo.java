@@ -2,8 +2,11 @@ package io.yadnyesh.jennyslectures;
 
 public class AssignmentRelationalLogicalDemo {
     public static void main(String[] args) {
-        int a = 8;
-        int b = a;
-        System.out.println("b = " + b);
+        String one = "yadnyesh";
+        String two = "yadnyesh";
+        System.out.println(one == two);
+        System.out.println(System.identityHashCode(one));
+        System.out.println(System.identityHashCode(two));
+
     }
 }
