@@ -1,4 +1,4 @@
-package io.yadnyesh.jennyslectures;
+package io.yadnyesh.jennyslectures.misc;
 
 public class StudentInfo {
     String name;

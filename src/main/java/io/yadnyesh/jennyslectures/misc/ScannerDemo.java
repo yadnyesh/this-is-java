@@ -1,7 +1,6 @@
-package io.yadnyesh.jennyslectures;
+package io.yadnyesh.jennyslectures.misc;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class ScannerDemo {
     public static void main(String[] args) throws IOException {

@@ -1,4 +1,4 @@
-package io.yadnyesh.jennyslectures;
+package io.yadnyesh.jennyslectures.misc;
 
 public class AssignmentRelationalLogicalDemo {
     public static void main(String[] args) {
